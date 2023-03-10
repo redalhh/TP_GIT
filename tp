@@ -1,0 +1,27 @@
+
+import java.io.*;
+import java.util.ArrayList;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Ingredient i1 = new Ingredient("choucroute","cuite","g",500);
+		Ingredient i2 = new Ingredient("lard","cuit et entier","g",150);
+		Ingredient i3 = new Ingredient("saucisse","cuite et entiere","unité",2);
+		Plat p1 = new Plat("choucroute1");
+		p1.ajouter(i1);
+		p1.ajouter(i2);
+		p1.ajouter(i3);
+		
+		Ingredient i4 = new Ingredient("choucroute","cuite","g",200);
+		Ingredient i5 = new Ingredient("lard","cuit et decoupé","g",100);
+		Ingredient i6 = new Ingredient("saucisse","cuite et entiere","unité",3);
+		ArrayList<Ingredient> listIngredient2 = new ArrayList<Ingredient>();
+		
+		Plat p2 = new Plat("choucroute2");
+		p2.ajouter(i4);
+		p2.ajouter(i5);
+		p2.ajouter(i6);
+		ArrayList<Plat> listPlat = new ArrayList<Plat>();
+		listPlat.add(p1);
+		listPlat.add(p2);
